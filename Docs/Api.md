@@ -1,31 +1,31 @@
-# Buber Breakfast API
+# Buber Dinner API
 
-- [Buber Breakfast API](#buber-breakfast-api)
-  - [Create Breakfast](#create-breakfast)
-    - [Create Breakfast Request](#create-breakfast-request)
-    - [Create Breakfast Response](#create-breakfast-response)
-  - [Get Breakfast](#get-breakfast)
-    - [Get Breakfast Request](#get-breakfast-request)
-    - [Get Breakfast Response](#get-breakfast-response)
-  - [Update Breakfast](#update-breakfast)
-    - [Update Breakfast Request](#update-breakfast-request)
-    - [Update Breakfast Response](#update-breakfast-response)
-  - [Delete Breakfast](#delete-breakfast)
-    - [Delete Breakfast Request](#delete-breakfast-request)
-    - [Delete Breakfast Response](#delete-breakfast-response)
+- [Buber Dinner API](#buber-dinner-api)
+  - [Create Dinner](#create-dinner)
+    - [Create Dinner Request](#create-dinner-request)
+    - [Create Dinner Response](#create-dinner-response)
+  - [Get Dinner](#get-dinner)
+    - [Get Dinner Request](#get-dinner-request)
+    - [Get Dinner Response](#get-dinner-response)
+  - [Update Dinner](#update-dinner)
+    - [Update Dinner Request](#update-dinner-request)
+    - [Update Dinner Response](#update-dinner-response)
+  - [Delete Dinner](#delete-dinner)
+    - [Delete Dinner Request](#delete-dinner-request)
+    - [Delete Dinner Response](#delete-dinner-response)
 
-## Create Breakfast
+## Create Dinner
 
-### Create Breakfast Request
+### Create Dinner Request
 
 ```js
-POST / breakfasts;
+POST / dinners;
 ```
 
 ```json
 {
   "name": "Vegan Sunshine",
-  "description": "Vegan everything! Join us for a healthy breakfast..",
+  "description": "Vegan everything! Join us for a healthy dinner..",
   "startDateTime": "2022-04-08T08:00:00",
   "endDateTime": "2022-04-08T11:00:00",
   "savory": ["Oatmeal", "Avocado Toast", "Omelette", "Salad"],
@@ -33,21 +33,21 @@ POST / breakfasts;
 }
 ```
 
-### Create Breakfast Response
+### Create Dinner Response
 
 ```js
 201 Created
 ```
 
 ```yml
-Location: {{host}}/Breakfasts/{{id}}
+Location: {{host}}/Dinners/{{id}}
 ```
 
 ```json
 {
   "id": "00000000-0000-0000-0000-000000000000",
   "name": "Vegan Sunshine",
-  "description": "Vegan everything! Join us for a healthy breakfast..",
+  "description": "Vegan everything! Join us for a healthy dinner..",
   "startDateTime": "2022-04-08T08:00:00",
   "endDateTime": "2022-04-08T11:00:00",
   "lastModifiedDateTime": "2022-04-06T12:00:00",
@@ -56,15 +56,15 @@ Location: {{host}}/Breakfasts/{{id}}
 }
 ```
 
-## Get Breakfast
+## Get Dinner
 
-### Get Breakfast Request
+### Get Dinner Request
 
 ```js
-GET /breakfasts/{{id}}
+GET /dinners/{{id}}
 ```
 
-### Get Breakfast Response
+### Get Dinner Response
 
 ```js
 200 Ok
@@ -74,7 +74,7 @@ GET /breakfasts/{{id}}
 {
   "id": "00000000-0000-0000-0000-000000000000",
   "name": "Vegan Sunshine",
-  "description": "Vegan everything! Join us for a healthy breakfast..",
+  "description": "Vegan everything! Join us for a healthy dinner..",
   "startDateTime": "2022-04-08T08:00:00",
   "endDateTime": "2022-04-08T11:00:00",
   "lastModifiedDateTime": "2022-04-06T12:00:00",
@@ -83,18 +83,18 @@ GET /breakfasts/{{id}}
 }
 ```
 
-## Update Breakfast
+## Update Dinner
 
-### Update Breakfast Request
+### Update Dinner Request
 
 ```js
-PUT /breakfasts/{{id}}
+PUT /dinners/{{id}}
 ```
 
 ```json
 {
   "name": "Vegan Sunshine",
-  "description": "Vegan everything! Join us for a healthy breakfast..",
+  "description": "Vegan everything! Join us for a healthy dinner..",
   "startDateTime": "2022-04-08T08:00:00",
   "endDateTime": "2022-04-08T11:00:00",
   "savory": ["Oatmeal", "Avocado Toast", "Omelette", "Salad"],
@@ -102,7 +102,7 @@ PUT /breakfasts/{{id}}
 }
 ```
 
-### Update Breakfast Response
+### Update Dinner Response
 
 ```js
 204 No Content
@@ -115,18 +115,18 @@ or
 ```
 
 ```yml
-Location: {{host}}/Breakfasts/{{id}}
+Location: {{host}}/Dinners/{{id}}
 ```
 
-## Delete Breakfast
+## Delete Dinner
 
-### Delete Breakfast Request
+### Delete Dinner Request
 
 ```js
-DELETE /breakfasts/{{id}}
+DELETE /dinners/{{id}}
 ```
 
-### Delete Breakfast Response
+### Delete Dinner Response
 
 ```js
 204 No Content
